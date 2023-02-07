@@ -12,7 +12,7 @@
         div {
             /*border: 1px solid;*/
         }
-      
+
         .elements h1 {
             color: #FFFFFF;
             font-size: 22px;
@@ -22,44 +22,72 @@
             cursor: pointer;
             vertical-align: top
         }
-        .elements h1:hover{
-            color:aqua;
-        }
+
+            .elements h1:hover {
+                color: aqua;
+            }
+
         .creator {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-}
- 
-        hr {
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
-}
-        .hrStyle{
-    color: #2E405A;
-    height: 1px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-}
-        
-        
- 
-      
-        
+            display: flex;
+            align-items: center;
+        }
+
+        .hrStyle {
+            color: #2E405A;
+            height: 1px;
+            margin-bottom: -16px;
+            margin-top: 16px;
+        }
+
+        .equilibrium {
+            position: relative;
+        }
+
+            .equilibrium img {
+                max-width: 100%;
+                border-radius: 8px;
+                margin-bottom: 24px;
+            }
+
+        #over {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: rgba(139,172,217, 0.5);
+            border-radius: 8px;
+            width: 100%;
+            height: 92.5%;
+        }
+
+        .equilibrium:hover #over {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .textStyle {
+            font-family: 'Outfit';
+            font-size: 15px;
+            line-height: 19px;
+            color: #FFFFFF;
+            margin-left: 5px;
+        }
+       .textStyle:hover{
+           color:aqua;
+       }
     </style>
 
 </head>
 <body style="background-color: #0D192C; display: flex; height: 100vh; ">
     <div style="background-color: #15263F;width:350px;height:596px;margin:auto;padding:24px;border-radius:15px;">
-        <img style="max-width:100%;border-radius:8px;" src="image-equilibrium.jpg" />
-        <div class="elements";>
+        <div class="equilibrium">
+            <img src="image-equilibrium.jpg" />
+            <div id="over">
+                <img src="icon-view.svg" />
+            </div>
+        </div>
+        <div class="elements" ;>
             <h1 style="">Equiliubrium #3429</h1>
 
         </div>
@@ -72,25 +100,24 @@
             <p style="color: #00FFF8; font-size: 16px; font-family: 'outfit'; line-height: 20px; display: inline;">0.041ETH </p>
         </div>
         <div style="float: right;">
-            <img style="display: inline;" src="icon-clock.svg" />
-            <p style=" display: inline; font-size: 16px; line-height: 20px; color: #8BACD9; font-family: 'outfit'; "> 3 days left</p>
-            
+            <img src="icon-clock.svg" />
+            <p style="display:inline;font-size: 16px; line-height: 20px; color: #8BACD9; font-family: 'outfit'; "> 3 days left</p>
+
         </div>
         <div style=" clear:both;">
         </div>
-        <hr class="hrStyle";>
-        
-        
-      
-        <div class="creator">
+        <hr class="hrStyle" ;>
 
+
+
+        <div class="creator">
 
             <img style="width:33px;height:33px;" src="image-avatar.png" alt="avatar_icon" />
             <h5 style="font-family:'Outfit';font-size:15px;line-height:19px;color:#8BACD9;margin-left:16px;">Creation of</h5>
-            <h6 style="font-family:'Outfit';font-size:15px;line-height:19px;color:#FFFFFF;margin-left:5px;">Jules wyvern</h6>
-             
+            <h6 class="textStyle">Jules wyvern</h6>
+
         </div>
-       
+
     </div>
 </body>
 </html>
